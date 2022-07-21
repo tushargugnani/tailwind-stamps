@@ -1,0 +1,51 @@
+---
+title: My Rad Blog
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/prism.css" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <style>
+        .copy-to-clipboard-button{
+            position: absolute;
+            top: 0.65rem;
+            right: 0.65rem;
+            z-index: 10;
+            display: block;
+            padding: 0.25rem 0.5rem !important;
+            font-size: .65em !important;
+            color: #0d6efd !important;
+            background-color: #fff !important;
+            border: 1px solid !important;
+            border-radius: 0.25rem !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container max-w-screen-md py-5 mx-auto">
+        
+
+       {{ content | safe }}
+        
+    </div>
+    <script src="/js/prism.js"></script>
+
+    <script type="text/javascript">
+       var tailwindExamples =  document.querySelectorAll('.tailwind-example');
+       tailwindExamples.forEach(e => 
+           {
+               var componentCode = e.innerHTML;
+               e.closest('.tailwind-component').querySelector('.language-markup').innerHTML = componentCode;
+           }
+       );
+    </script>
+
+</body>
+</html>
