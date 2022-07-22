@@ -8,7 +8,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/images");
 
     return {
-        pathPrefix: "/tailwind-components/",
         dir: { input: 'src', output: '_site' }
     }; 
 
