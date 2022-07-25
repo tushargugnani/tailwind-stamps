@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Dividers</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/prism.css" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <style>
+        .copy-to-clipboard-button{
+            position: absolute;
+            top: 0.65rem;
+            right: 0.65rem;
+            z-index: 10;
+            display: block;
+            padding: 0.25rem 0.5rem !important;
+            font-size: .65em !important;
+            color: #0d6efd !important;
+            background-color: #fff !important;
+            border: 1px solid !important;
+            border-radius: 0.25rem !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container max-w-screen-md py-5 px-1 mx-auto">
+        
+
+       <h2 class="text-3xl font-semibold text-gray-800 my-3">Dividers</h2>
+<!-- Alerts-->
+<h4 class="my-2 text-lg text-gray-700 font-medium">Horizontal Divider</h4>
+<div class="tailwind-component">
+<div class="tailwind-example border rounded-t p-3">
+    <div class="flex my-2 text-sm font-semibold items-center text-gray-800">
+        <div class="flex-grow border-t h-px mr-3"></div>
+        OR
+        <div class="flex-grow border-t h-px ml-3"></div>
+    </div>
+</div>
+<div class="tailwind-clipboard bg-gray-100">
+    <script type="text/plain" class="language-markup !m-0 !bg-gray-100 !text-sm">
+    </script>
+</div>
+</div>
+
+
+
+
+
+
+
+        
+    </div>
+    <script src="/js/prism.js"></script>
+
+    <script type="text/javascript">
+       var tailwindExamples =  document.querySelectorAll('.tailwind-example');
+       tailwindExamples.forEach(e => 
+           {
+               var componentCode = e.innerHTML;
+               e.closest('.tailwind-component').querySelector('.language-markup').innerHTML = componentCode;
+           }
+       );
+    </script>
+
+</body>
+</html>
