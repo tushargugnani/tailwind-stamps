@@ -1,0 +1,13 @@
+<svg width="512" height="384" viewBox="0 0 512 384" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="384" fill="white"/>
+<rect x="64" y="128" width="384" height="128" fill="white" stroke="black" stroke-width="2"/>
+<rect x="337" y="145" width="94" height="94" fill="#DAE1E7" stroke="black" stroke-width="2"/>
+<rect x="348" y="156" width="72" height="72" fill="white"/>
+<path d="M399 201L417 228H381L399 201Z" fill="#DAE1E7"/>
+<path d="M399 201L417 228H381L399 201Z" fill="#DAE1E7"/>
+<path d="M375 192L399 228H351L375 192Z" fill="#DAE1E7"/>
+<path d="M375 192L399 228H351L375 192Z" fill="#DAE1E7"/>
+<circle cx="399" cy="180" r="12" fill="#DAE1E7"/>
+<path d="M96 168C104 157.333 112 157.333 120 168C128 178.667 136 178.667 144 168C152 157.333 160 157.333 168 168C176 178.667 184 178.667 192 168C200 157.333 208 157.333 216 168C224 178.667 232 178.667 240 168" stroke="#606F7B" stroke-width="6" stroke-linecap="round"/>
+<path d="M96 216C104 205.333 112 205.333 120 216C128 226.667 136 226.667 144 216C152 205.333 160 205.333 168 216C176 226.667 184 226.667 192 216C200 205.333 208 205.333 216 216C224 226.667 232 226.667 240 216C248 205.333 256 205.333 264 216C272 226.667 280 226.667 288 216" stroke="#606F7B" stroke-width="2" stroke-linecap="round"/>
+</svg>
