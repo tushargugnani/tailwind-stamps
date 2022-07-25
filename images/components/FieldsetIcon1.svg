@@ -1,0 +1,15 @@
+<svg width="512" height="384" viewBox="0 0 512 384" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="384" fill="white"/>
+<rect x="70" y="70" width="384" height="256" fill="#C4C4C4" fill-opacity="0.68"/>
+<rect x="65" y="65" width="382" height="254" fill="white" stroke="black" stroke-width="2"/>
+<path d="M160 264C168 253.333 176 253.333 184 264C192 274.667 200 274.667 208 264C216 253.333 224 253.333 232 264C240 274.667 248 274.667 256 264C264 253.333 272 253.333 280 264" stroke="#606F7B" stroke-width="2" stroke-linecap="round"/>
+<path d="M160 193C168 182.333 176 182.333 184 193C192 203.667 200 203.667 208 193C216 182.333 224 182.333 232 193C240 203.667 248 203.667 256 193C264 182.333 272 182.333 280 193C288 203.667 296 203.667 304 193" stroke="#606F7B" stroke-width="2" stroke-linecap="round"/>
+<path d="M160 120C168 109.333 176 109.333 184 120C192 130.667 200 130.667 208 120C216 109.333 224 109.333 232 120C240 130.667 248 130.667 256 120C264 109.333 272 109.333 280 120C288 130.667 296 130.667 304 120" stroke="#606F7B" stroke-width="2" stroke-linecap="round"/>
+<rect x="97" y="241" width="46" height="46" rx="11" fill="#DAE1E7" stroke="black" stroke-width="2"/>
+<rect x="97" y="170" width="46" height="46" rx="11" fill="#DAE1E7" stroke="black" stroke-width="2"/>
+<rect x="83" y="48" width="122" height="35" fill="white"/>
+<rect x="83" y="48" width="122" height="35" fill="white"/>
+<path d="M96 65C104 54.3333 112 54.3333 120 65C128 75.6667 136 75.6667 144 65C152 54.3333 160 54.3333 168 65C176 75.6667 184 75.6667 192 65" stroke="#606F7B" stroke-width="2" stroke-linecap="round"/>
+<rect x="97" y="96" width="46" height="46" rx="11" fill="#DAE1E7" stroke="black" stroke-width="2"/>
+<path d="M136 109L114.703 131L106 122.01" stroke="black" stroke-width="2"/>
+</svg>
