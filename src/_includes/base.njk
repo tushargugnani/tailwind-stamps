@@ -51,7 +51,9 @@ title: Tailwind Components
        tailwindExamples.forEach(e => 
            {
                var componentCode = e.innerHTML;
-               e.closest('.tailwind-component').querySelector('.language-markup').innerHTML = componentCode;
+               var componentCodeWidget = '<div class="tailwind-clipboard bg-gray-100"><script type="text/plain" class="language-markup !m-0 !bg-gray-100 !text-sm">'+componentCode+'</scr' + 'ipt></div>';
+               e.insertAdjacentHTML('afterend',componentCodeWidget);
+               //e.closest('.tailwind-component').querySelector('.language-markup').innerHTML = componentCode;
            }
        );
     </script>
