@@ -40,24 +40,17 @@
 
        <h2 class="text-3xl font-semibold text-gray-800 my-3">Badges</h2>
 <!-- Badge-->
-<h4 class="my-2 text-lg text-gray-700 font-medium">Button Badges</h4>
-<div class="tailwind-component">
-<div class="tailwind-example border rounded-t p-2 text-center text-sm">
-    <button type="button" class="rounded bg-blue-500 hover:bg-blue-700 p-2 text-white font">
-        Notifications <span class="rounded bg-gray-100 text-black py-0.25 px-1">4</span>
-    </button>
-</div>
-<div class="tailwind-clipboard bg-gray-100">
-    <script type="text/plain" class="language-markup !m-0 !bg-gray-100 !text-sm">
-    </script>
-</div>
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Button Badges</h4>
+    <div class="tailwind-example border rounded-t p-2 text-center text-sm">
+        <button type="button" class="rounded bg-blue-500 hover:bg-blue-700 p-2 text-white font">
+            Notifications <span class="rounded bg-gray-100 text-black py-0.25 px-1">4</span>
+        </button>
+    </div>
 </div>
 
-<div class="my-10"></div>
-
+<div class="my-10">
 <h4 class="my-2 text-lg text-gray-700 font-medium">Color Badges</h4>
-
-<div class="tailwind-component">
     <div class="tailwind-example border rounded-t p-2 text-center text-sm">
         <span class="py-0.5 px-1 rounded bg-blue-500 text-white text-xs">Primary</span>
         <span class="py-0.5 px-1 rounded bg-gray-500 text-white text-xs">Secondary</span>
@@ -68,17 +61,10 @@
         <span class="py-0.5 px-1 rounded bg-gray-200 text-black text-xs">Light</span>
         <span class="py-0.5 px-1 rounded bg-gray-800 text-white text-xs">Dark</span>
     </div>
-    <div class="tailwind-clipboard bg-gray-100">
-        <script type="text/plain" class="language-markup !m-0 !bg-gray-100 !text-sm">
-        </script>
-    </div>
 </div>
 
-<div class="my-10"></div>
-
+<div class="my-10">
 <h4 class="my-2 text-lg text-gray-700 font-medium">Pill Badges</h4>
-
-<div class="tailwind-component">
     <div class="tailwind-example border rounded-t p-2 text-center text-sm">
         <span class="py-0.5 px-1 rounded-full bg-blue-500 text-white text-xs">Primary</span>
         <span class="py-0.5 px-1 rounded-full bg-gray-500 text-white text-xs">Secondary</span>
@@ -88,10 +74,6 @@
         <span class="py-0.5 px-1 rounded-full bg-teal-500 text-white text-xs">Info</span>
         <span class="py-0.5 px-1 rounded-full bg-gray-200 text-black text-xs">Light</span>
         <span class="py-0.5 px-1 rounded-full bg-gray-800 text-white text-xs">Dark</span>
-    </div>
-    <div class="tailwind-clipboard bg-gray-100">
-        <script type="text/plain" class="language-markup !m-0 !bg-gray-100 !text-sm">
-        </script>
     </div>
 </div>
         
@@ -103,7 +85,9 @@
        tailwindExamples.forEach(e => 
            {
                var componentCode = e.innerHTML;
-               e.closest('.tailwind-component').querySelector('.language-markup').innerHTML = componentCode;
+               var componentCodeWidget = '<div class="tailwind-clipboard bg-gray-100"><script type="text/plain" class="language-markup !m-0 !bg-gray-100 !text-sm">'+componentCode+'</scr' + 'ipt></div>';
+               e.insertAdjacentHTML('afterend',componentCodeWidget);
+               //e.closest('.tailwind-component').querySelector('.language-markup').innerHTML = componentCode;
            }
        );
     </script>
