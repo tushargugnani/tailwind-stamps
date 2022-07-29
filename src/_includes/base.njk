@@ -40,11 +40,14 @@ title: Tailwind Components
 <body>
     {% include './header.njk' %}
 
-    <div class="container max-w-screen-md py-5 px-1 mx-auto">
+   <div class="flex">
+    {% include './sidebar.njk' %}
+    <div class="container max-w-screen-md pt-5 mx-5">
         
 
        {{ content | safe }}
         
+    </div>
     </div>
     <script src="{{ '/js/prism.js' | url }}"></script>
 

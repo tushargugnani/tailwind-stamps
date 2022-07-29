@@ -1,0 +1,11 @@
+<aside class="w-64 h-screen sticky top-0 border-r pt-5 mr-5 pr-5 text-gray-700">
+    <span class="text-sm font-semibold ml-4">Base</span>
+    {% set navPages = collections.all | eleventyNavigation("Base") %}
+        {%- for entry in navPages %}
+            <a href="{{ entry.url | url }}">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer {% if entry.url == page.url %} bg-blue-100 border-blue-300 {% endif %}">
+                    {{ entry.title }}
+                </div>
+            </a>
+    {%- endfor %}
+</aside>
