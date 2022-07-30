@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Headers</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/prism.css" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <style>
+        .copy-to-clipboard-button{
+            position: absolute;
+            top: 0.65rem;
+            right: 0.65rem;
+            z-index: 10;
+            display: block;
+            padding: 0.25rem 0.5rem !important;
+            font-size: .65em !important;
+            color: #0d6efd !important;
+            background-color: #fff !important;
+            border: 1px solid !important;
+            border-radius: 0.25rem !important;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S7BRZTR45X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S7BRZTR45X');
+</script>
+</head>
+<body>
+        <header>
+            <div class="flex items-center justify-between h-14 border-b px-6">
+                <a href="/"><div class="text-2xl font-semibold text-gray-800">TailwindCSS Components</div></a>
+                <div>
+                  <a href="https://github.com/tushargugnani/tailwindcss-components" target="_blank">
+                    <img class="w-8 h-8 rounded-full m-1 bg-gradient-to-r from-green-300 to-blue-200 hover:from-pink-500 hover:to-yellow-500" src="/images/github-icon.png" alt="tailwind free componenets github" />
+                  </a>
+                </div>
+            </div>
+    </header>
+
+   <div class="flex">
+    <aside class="w-64 h-screen sticky top-0 border-r pt-5 mr-5 pr-5 text-gray-700">
+    <span class="text-sm font-semibold ml-4">Base</span>
+    
+            <a href="/components/accordion/">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                    Accordion
+                </div>
+            </a>
+            <a href="/components/alerts/">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                    Alert
+                </div>
+            </a>
+            <a href="/components/badge/">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                    Badge
+                </div>
+            </a>
+            <a href="/components/button-group/">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                    Button Group
+                </div>
+            </a>
+            <a href="/components/buttons/">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                    Buttons
+                </div>
+            </a>
+            <a href="/components/dividers/">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                    Dividers
+                </div>
+            </a>
+            <a href="/components/dropdown/">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                    Dropdown
+                </div>
+            </a>
+            <a href="/components/nav/">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                    Nav
+                </div>
+            </a>
+            <a href="/components/progress-bars/">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                    Progress Bar
+                </div>
+            </a>
+            <a href="/components/search-box/">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                    SearchBox
+                </div>
+            </a>
+</aside>
+    <div class="container max-w-screen-md pt-5 mx-5">
+        
+
+       <h2 class="text-3xl font-semibold text-gray-800 my-3">Headers</h2>
+<!-- Horizonal Divider-->
+<div class="my-10">
+<h4 class="my-2 text-lg text-gray-700 font-medium">Basic Header</h4>
+<div class="tailwind-example border rounded-t p-3">
+    <div class="p-10 rounded border">
+        <h2 class="text-gray-800 font-semibold text-3xl my-2">Have a Project in mind?</h2>
+        <p class="text-gray-500 py-3 w-2/3">With this TailwindCSS component library you can start building modern user interfaces faster than ever before.</p>
+        <div class="pt-5">
+            <button class="py-1.5 px-4 mx-1 rounded bg-indigo-500 border-indigo-600 text-white">Contact us</button>
+            <button class="py-1.5 px-4 mx-1 rounded border border-indigo-700 text-indigo-500">Learn more</button>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+        
+    </div>
+    </div>
+    <script src="/js/prism.js"></script>
+
+    <script type="text/javascript">
+       var tailwindExamples =  document.querySelectorAll('.tailwind-example');
+       tailwindExamples.forEach(e => 
+           {
+               var componentCode = e.innerHTML;
+               var componentCodeWidget = '<div class="tailwind-clipboard bg-gray-100"><script type="text/plain" class="language-markup !m-0 !bg-gray-100 !text-sm">'+componentCode+'</scr' + 'ipt></div>';
+               e.insertAdjacentHTML('afterend',componentCodeWidget);
+               //e.closest('.tailwind-component').querySelector('.language-markup').innerHTML = componentCode;
+           }
+       );
+    </script>
+
+</body>
+</html>
