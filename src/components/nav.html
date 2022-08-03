@@ -6,47 +6,77 @@ eleventyNavigation:
   parent: Base
 ---
 <h2 class="text-3xl font-semibold text-gray-800 my-3">Navs</h2>
+
+
 <!-- Instagram Nav-->
-<h4 class="my-2 text-lg text-gray-700 font-medium">Instagram Navigation</h4>
-<div class="tailwind-example border rounded-t p-3">
-    <nav class="h-14 bg-white border-b border-gray-300">
-        <div class="h-full w-full max-w-4xl mx-auto flex items-center justify-between">
-             <!-- Logo -->
-             <div>
-                 <img src="/images/Instagram_logo.png" class="h-8 ml-3" alt="Instagram Logo" />
-             </div>
-             <!-- Search Bar -->
-             <div class="hidden md:block">
-                 <div class="relative">
-                     <input type="text" class="rounded bg-gray-100 p-1.5 text-sm pl-8 w-60" placeholder="Search" />
-                     <div class="absolute top-2 left-2 text-gray-400">
-                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                         </svg>
-                     </div>
-                 </div>
-             </div>
-             <!-- Icons-->
-             <div class="flex text-gray-800">
-                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
-                     <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-                 </svg>
-                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                     <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                 </svg>
-                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                 </svg>
-                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                 </svg>
-                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                 </svg>
-                 <div>
-                     <img src="/images/profile-nadal.jpeg" class="rounded-full h-6 w-6 mx-2 cursor-pointer" alt="profile picture" />
-                 </div>
-             </div>
-        </div>
-    </nav>
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Basic Navigation</h4>
+    <div class="tailwind-example border rounded-t p-3">
+        <nav class="border-b">
+            <div class="container max-w-screen-lg mx-auto flex justify-between h-14">
+                <!-- Brand-->
+                <a class="flex items-center cursor-pointer hover:bg-yellow-50 px-2">
+                    <!-- Logo-->
+                    <div class="rounded bg-yellow-400 text-white font-bold w-10 h-10 flex justify-center text-3xl pt-0.5">5</div>
+                    <div class="text-gray-700 font-semibold ml-2">5Balloons Tech</div>
+                </a>
+                <!-- Nav Links-->
+                <ul class="flex text-gray-700 text-base">
+                    <li class="px-3 cursor-pointer hover:bg-yellow-50 flex items-center hover:text-gray-800">Laravel</li>
+                    <li class="px-3 cursor-pointer hover:bg-yellow-50 flex items-center hover:text-gray-800">Livewire</li>
+                    <li class="px-3 cursor-pointer hover:bg-yellow-50 flex items-center hover:text-gray-800">TailwindCSS</li>
+                    <li class="px-3 cursor-pointer hover:bg-yellow-50 flex items-center hover:text-gray-800">Alpine JS</li>
+                    <li class="px-3 cursor-pointer hover:bg-yellow-50 flex items-center hover:text-gray-800">About</li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- Instagram Nav-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Instagram Navigation</h4>
+    <div class="tailwind-example border rounded-t p-3">
+        <nav class="h-14 bg-white border-b border-gray-300">
+            <div class="h-full w-full max-w-4xl mx-auto flex items-center justify-between">
+                <!-- Logo -->
+                <div>
+                    <img src="/images/Instagram_logo.png" class="h-8 ml-3" alt="Instagram Logo" />
+                </div>
+                <!-- Search Bar -->
+                <div class="hidden md:block">
+                    <div class="relative">
+                        <input type="text" class="rounded bg-gray-100 p-1.5 text-sm pl-8 w-60" placeholder="Search" />
+                        <div class="absolute top-2 left-2 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- Icons-->
+                <div class="flex text-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <div>
+                        <img src="/images/profile-nadal.jpeg" class="rounded-full h-6 w-6 mx-2 cursor-pointer" alt="profile picture" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 </div>
