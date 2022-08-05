@@ -112,7 +112,7 @@
     <h4 class="my-2 text-lg text-gray-700 font-medium">Basic Navigation</h4>
     <div class="tailwind-example border rounded-t p-3">
         <nav class="border-b">
-            <div x-data="{showMenu : false}" class="container max-w-screen-lg mx-auto flex justify-between h-14">
+            <div x-data="{showMenu : false}" class="container relative max-w-screen-lg mx-auto flex justify-between h-14">
                 <!-- Brand-->
                 <a href="#" class="flex items-center cursor-pointer hover:bg-purple-50 px-2 ml-3">
                     <!-- Logo-->
@@ -124,7 +124,7 @@
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </button>
                 <!-- Nav Links-->
-                <ul class="md:flex text-gray-700 text-base mr-3 origin-top"
+                <ul class="md:flex text-gray-700 text-base mr-3 origin-top z-10"
                     :class="{ 'block absolute top-14 border-b bg-white w-full p-2': showMenu, 'hidden': !showMenu}"
                     id="navbar-main" x-cloak>
                     <li class="px-3 cursor-pointer hover:bg-purple-50 flex items-center hover:text-gray-800" :class="showMenu && 'py-1'">
