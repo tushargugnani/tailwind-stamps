@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Test</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <style>
+        [x-cloak] { display: none !important; }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet"></head>
+<body class="bg-amber-50">
+       <!-- Navigation-->
+<div x-data="{showMenu :false}">
+    <nav class="border-b bg-white">
+        <div class="container relative max-w-screen-lg mx-auto flex justify-between h-14 px-5">
+            <!-- Brand-->
+            <a class="flex items-center cursor-pointer hover:bg-yellow-50 px-2">
+                <!-- Logo-->
+                <div class="rounded bg-yellow-400 text-white font-bold w-10 h-10 flex justify-center text-3xl pt-0.5">5</div>
+                <div class="text-gray-700 font-semibold ml-2">5Balloons Tech</div>
+            </a>
+            <!--Mobile Hamburger Button-->
+            <button @click="showMenu = !showMenu" class="inline-flex items-center my-2 p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <!--Desktop Menu-->
+            <ul class="md:flex hidden h-full text-gray-700 text-base">
+                <li x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false" class="relative px-3 cursor-pointer flex hover:bg-yellow-50 hover:text-gray-800">
+                    <a class="flex items-center">Laravel
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 text-yellow-800" :class="open && 'rotate-180'" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    </a>
+                    <ul x-show="open" class="top-12 z-10 bg-white absolute rounded border w-48">
+                        <li class="py-2 pl-4 pr-10 hover:bg-yellow-100">Learn Laravel</li>
+                        <li class="py-2 pl-4 pr-10 hover:bg-yellow-100">Livewire Tutorials</li> 
+                        <li class="py-2 pl-4 pr-10 hover:bg-yellow-100">Laravel Dusk</li>
+                    </ul>
+                </li>
+                <li x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false" class="relative px-3 cursor-pointer hover:bg-yellow-50 flex items-center hover:text-gray-800">
+                    <a class="flex items-center">Frontend
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 text-yellow-800" :class="open && 'rotate-180'" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    </a>
+                    <ul x-show="open" class="top-12 z-10 bg-white absolute rounded border w-48">
+                        <li class="py-2 pl-4 pr-10 hover:bg-yellow-100">TailwindCSS</li>
+                        <li class="py-2 pl-4 pr-10 hover:bg-yellow-100">Bootstrap</li> 
+                        <li class="py-2 pl-4 pr-10 hover:bg-yellow-100">AlpineJS</li>
+                    </ul>
+                </li>
+                <li x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false" class="relative px-3 cursor-pointer hover:bg-yellow-50 flex items-center hover:text-gray-800">
+                    <a class="flex items-center">Components
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 text-yellow-800" :class="open && 'rotate-180'" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    </a>
+                    <ul x-show="open" class="top-12 z-10 bg-white absolute rounded border w-48">
+                        <li class="py-2 pl-4 pr-10 hover:bg-yellow-100">Livewire Components</li>
+                        <li class="py-2 pl-4 pr-10 hover:bg-yellow-100">TailwindCSS Components</li> 
+                    </ul>
+                </li>
+                <li x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false" class="relative px-3 cursor-pointer hover:bg-yellow-50 flex items-center hover:text-gray-800">
+                    <a class="flex items-center">Courses
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 text-yellow-800" :class="open && 'rotate-180'" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    </a>
+                    <ul x-show="open" class="right-0 top-12 z-10 bg-white absolute rounded border w-48">
+                        <li class="py-2 pl-4 pr-10 hover:bg-yellow-100">Laravel Dusk</li>
+                        <li class="py-2 pl-4 pr-10 hover:bg-yellow-100">AlpineJS</li> 
+                    </ul>
+                </li>
+                <li x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false" class="relative px-3 cursor-pointer hover:bg-yellow-50 flex items-center hover:text-gray-800">
+                    <a class="flex items-center">About
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 text-yellow-800" :class="open && 'rotate-180'" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                        </a>
+                        <ul x-show="open" class="right-0 top-12 z-10 bg-white absolute rounded border w-48">
+                            <li class="py-2 pl-4 pr-10 hover:bg-yellow-100">About Us</li>
+                            <li class="py-2 pl-4 pr-10 hover:bg-yellow-100">Advertise</li> 
+                        </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  <div x-data="{
+    selected: null,
+    toggle(event){
+       var collapseRef = event.currentTarget.getAttribute('aria-controls');
+
+       this.selected = (collapseRef !== this.selected) ? collapseRef : null;
+    },
+    isAccordionOpen(collapseRef){
+        return this.selected == collapseRef ? true : false;
+    },
+    defaultOpen(collapseRef){
+        this.selected = collapseRef;
+    }
+  }">
+    <!-- Pop Out Navigation -->
+  <nav class="fixed top-0 right-0 bottom-0 left-0 backdrop-blur-sm z-10" :class="showMenu ? 'visible' : 'invisible' " x-cloak>
+        <!-- UL Links -->
+        <ul class="absolute top-0 right-0 bottom-0 w-10/12 bg-white drop-shadow-2xl z-10 transition-all"
+        :class="showMenu ? 'translate-x-0' : 'translate-x-full'">
+
+        <li class="border-b border-inherit" x-id="['accordion-item']">
+            <a href="#" class="flex items-center justify-between block p-4" aria-current="true" x-on:click="toggle"
+                type="button"
+                :aria-expanded="isAccordionOpen($id('accordion-item'))"
+                :aria-controls="$id('accordion-item')"
+                class="flex items-center justify-between p-3 w-full focus:border focus:border-blue-200"
+                :class="isAccordionOpen($id('accordion-item')) && 'bg-yellow-100 text-yellow-800'"
+                @keydown.space.prevent.stop="toggle">
+            <span>Laravel</span>
+            <span>
+                      <svg class="rotate-0 h-6 w-6 transform" :class="isAccordionOpen($id('accordion-item')) && 'rotate-180'" x-transition xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+            </a>
+            <ul :id="$id('accordion-item')"
+            x-show="isAccordionOpen($id('accordion-item'))"
+            x-cloak
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="scale-y-0"
+            x-transition:enter-end="scale-y-100"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="scale-y-100"
+           x-transition:leave-end="scale-y-0"
+           class="transition-transform ease-out overflow-hidden origin-top transform p-3"class="top-12 z-10 bg-white absolute rounded border w-48">
+                <li class="py-2 pl-4 pr-10 hover:bg-yellow-100 cursor-pointer">Learn Laravel</li>
+                <li class="py-2 pl-4 pr-10 hover:bg-yellow-100 cursor-pointer">Livewire Tutorials</li> 
+                <li class="py-2 pl-4 pr-10 hover:bg-yellow-100 cursor-pointer">Laravel Dusk</li>
+            </ul>
+        </li>
+        <li class="border-b border-inherit" x-id="['accordion-item']">
+            <a href="#" class="flex items-center justify-between block p-4" aria-current="true" x-on:click="toggle"
+                type="button"
+                :aria-expanded="isAccordionOpen($id('accordion-item'))"
+                :aria-controls="$id('accordion-item')"
+                class="flex items-center justify-between p-3 w-full focus:border focus:border-blue-200"
+                :class="isAccordionOpen($id('accordion-item')) && 'bg-yellow-100 text-yellow-800'"
+                @keydown.space.prevent.stop="toggle">
+            <span>Frontend</span>
+            <span>
+                      <svg class="rotate-0 h-6 w-6 transform" :class="isAccordionOpen($id('accordion-item')) && 'rotate-180'" x-transition xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+            </a>
+            <ul :id="$id('accordion-item')"
+            x-show="isAccordionOpen($id('accordion-item'))"
+            x-cloak
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="scale-y-0"
+            x-transition:enter-end="scale-y-100"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="scale-y-100"
+           x-transition:leave-end="scale-y-0"
+           class="transition-transform ease-out overflow-hidden origin-top transform p-3"class="top-12 z-10 bg-white absolute rounded border w-48">
+                <li class="py-2 pl-4 pr-10 hover:bg-yellow-100 cursor-pointer">TailwindCSS</li>
+                <li class="py-2 pl-4 pr-10 hover:bg-yellow-100 cursor-pointer">Bootstrap</li> 
+                <li class="py-2 pl-4 pr-10 hover:bg-yellow-100 cursor-pointer">AlpineJS</li>
+            </ul>
+        </li>
+        <li class="border-b border-inherit" x-id="['accordion-item']">
+            <a href="#" class="block p-4">Articles</a>
+        </li>
+        <li class="border-b border-inherit" x-id="['accordion-item']">
+            <a href="#" class="block p-4">Contact</a>
+        </li>
+
+    </ul>
+
+    <!-- Close Button -->
+    <button class="absolute top-0 right-0 bottom-0 left-0" @click="showMenu = !showMenu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute top-2 left-2" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+  </nav>
+  </div>
+</div>
+
+<div class="container max-w-screen-lg mx-auto mt-10">
+    <!-- Hero-->
+    <div class="flex rounded border border-yellow-300 items-center bg-white p-5 px-10 mx-10">
+        <div class="flex-1">
+            <div class="text-4xl text-gray-800 font-['Roboto_Slab'] font-semibold">Welcome to 5Balloons</div>
+            <div class="text-xl text-gray-500 py-10 font-['Patrick_Hand']">Hello <span>&#9995;</span>, This is Tushar.<br/> 5Balloons is my digital garden <span>&#127793;</span>. In here I write technical articles, programming tips and tutorials.
+             <br/><br/>Have fun exploring and learning !</div>
+        </div>
+        <div class="hidden md:block">
+            <img class="w-80" class="mr-10" src="/images/templates/5balloons/hero-guy.svg" />
+        </div>
+    </div>
+
+<div class="mt-7 text-center px-24">
+    <h2 class="text-gray-600 text-3xl">Pick a <span class="text-yellow-800 font-semibold">Tech</span> to get <span class="text-yellow-800 font-semibold">Better</span> at</h2>
+    <div class="flex justify-center mt-5 flex-wrap">
+        <a href="<?php echo $tech['url'] ?>">
+			<div class="rounded border p-3 m-2 cursor-pointer bg-white hover:bg-yellow-100 hover:scale-105">
+				<img width="100px" src="/images/templates/5balloons/icons/laravel.png" alt="Laravel Roadmap">
+			</div>
+        </a>
+        <a href="<?php echo $tech['url'] ?>">
+			<div class="rounded border p-3 m-2 cursor-pointer bg-white hover:bg-yellow-100 hover:scale-105">
+				<img width="100px" src="/images/templates/5balloons/icons/livewire.png" alt="Laravel Roadmap">
+			</div>
+        </a>
+        <a href="<?php echo $tech['url'] ?>">
+			<div class="rounded border p-3 m-2 cursor-pointer bg-white hover:bg-yellow-100 hover:scale-105">
+				<img width="100px" src="/images/templates/5balloons/icons/tailwindcss.png" alt="Laravel Roadmap">
+			</div>
+        </a>
+        <a href="<?php echo $tech['url'] ?>">
+			<div class="rounded border p-3 m-2 cursor-pointer bg-white hover:bg-yellow-100 hover:scale-105">
+				<img width="100px" src="/images/templates/5balloons/icons/bootstrap.png" alt="Laravel Roadmap">
+			</div>
+        </a>
+        <a href="<?php echo $tech['url'] ?>">
+			<div class="rounded border p-3 m-2 cursor-pointer bg-white hover:bg-yellow-100 hover:scale-105">
+				<img width="100px" src="/images/templates/5balloons/icons/git.png" alt="Laravel Roadmap">
+			</div>
+        </a>
+        <a href="<?php echo $tech['url'] ?>">
+			<div class="rounded border p-3 m-2 cursor-pointer bg-white hover:bg-yellow-100 hover:scale-105">
+				<img width="100px" src="/images/templates/5balloons/icons/dusk.png" alt="Laravel Roadmap">
+			</div>
+        </a>
+        <a href="<?php echo $tech['url'] ?>">
+			<div class="rounded border p-3 m-2 cursor-pointer bg-white hover:bg-yellow-100 hover:scale-105">
+				<img width="100px" src="/images/templates/5balloons/icons/alpinejs.png" alt="Laravel Roadmap">
+			</div>
+        </a>
+        <a href="<?php echo $tech['url'] ?>">
+			<div class="rounded border p-3 m-2 cursor-pointer bg-white hover:bg-yellow-100 hover:scale-105">
+				<img width="100px" src="/images/templates/5balloons/icons/php.png" alt="Laravel Roadmap">
+			</div>
+        </a>
+        <a href="<?php echo $tech['url'] ?>">
+			<div class="rounded border p-3 m-2 cursor-pointer bg-white hover:bg-yellow-100 hover:scale-105">
+				<img width="100px" src="/images/templates/5balloons/icons/vuejs.png" alt="Laravel Roadmap">
+			</div>
+        </a>
+        <a href="<?php echo $tech['url'] ?>">
+			<div class="rounded border p-3 m-2 cursor-pointer bg-white hover:bg-yellow-100 hover:scale-105">
+				<img width="100px" src="/images/templates/5balloons/icons/wordpress.png" alt="Laravel Roadmap">
+			</div>
+        </a>
+    </div>
+</div>
+<div class="px-10 my-10">
+    <h2 class="text-2xl text-gray-800 font-semibold text-yellow-800">Latest Posts</h2>
+    <div class="rounded flex bg-white p-5 my-3 border border-yellow-300">
+        <!-- Post Image-->
+        <div>
+
+        </div>
+        <div>
+            <!-- Post Heading-->
+            <div>
+               <h3 class="text-2xl text-gray-800 font-['Roboto_Slab'] font-semibold my-3">Stretch height of flex items when vertically centered TailwindCSS </h3>
+            </div>
+            <!-- Post Meta-->
+            <div class="flex text-sm my-1 text-gray-600">
+                <!-- Category-->
+                <div class="mr-2">
+                   In <span class="underline">Laravel</span>, <span class="underline">Wordpress</span>
+                </div>
+                <!--Date -->
+                <div class="mr-2">
+                    July 29, 2022
+                </div>
+                <!-- Author -->
+                <div class="mr-2">
+                    Tushar Gugnani
+                </div>
+            </div>
+            <!--Post Excerpt-->
+            <div class="text-gray-600 my-2">
+              I have been recently working with some TailwindCSS Components, and while working on a navigation component, I ran into a problem wherein the items of flex items would not stretch to the full height of the …
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
