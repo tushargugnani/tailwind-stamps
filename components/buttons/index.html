@@ -147,6 +147,40 @@
 </div>
 
 
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Self Confirm Button <span class="ml-2 p-1 rounded text-xs bg-gray-400 text-white">Uses AlpineJS</span></h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <button x-data="{
+            confirmAction : false,
+            buttonText : 'Delete',
+            confirm(){
+                if(this.confirmAction == true){
+                    alert('fire action');
+                }
+                this.confirmAction = true;
+                this.buttonText = 'Confirm Delete?'
+            },
+            cancelConfirm(){
+                this.confirmAction = false;
+                this.buttonText = 'Delete'
+            }
+        }"
+            type="button"
+            class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+            @click="confirm"
+            :class="confirmAction ? 'bg-red-100 text-red-600 hover:bg-red-200 focus:ring-red-500' : 'bg-purple-500'"
+        >
+            <span x-text="buttonText"></span>
+            <template x-if="confirmAction">
+                <svg @click.stop="cancelConfirm" xmlns="http://www.w3.org/2000/svg" class="rounded-full h-4 w-4 ml-2 hover:bg-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </template>
+        </button>
+    </div>
+</div>
+
+
 
 
 
