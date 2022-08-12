@@ -11,9 +11,40 @@ eleventyNavigation:
     <h4 class="my-2 text-lg text-gray-700 font-medium">Input Box</h4>
     <div class="tailwind-example border rounded-t p-3 flex justify-center">
         <div>
-            <label class="text-sm block text-gray-800">Full Name</label>
-            <div class="mt-1">
-                <input type="text" placeholder="Enter your fullname" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
+            <!-- Text Input-->
+            <div class="my-2">
+                <label class="text-sm block text-gray-800">Full Name</label>
+                <div class="mt-1">
+                    <input type="text" name="example-text-input" placeholder="Enter your fullname" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
+                </div>
+            </div>
+            <!-- Password Input-->
+            <div class="my-2">
+                <label class="text-sm block text-gray-800">Password</label>
+                <div class="mt-1">
+                    <input type="password" name="example-password-input" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
+                </div>
+            </div>
+            <!-- Disabled Input-->
+            <div class="my-2">
+                <label class="text-sm block text-gray-800">Disabled</label>
+                <div class="mt-1">
+                    <input type="text" name="example-disabled-input" disabled placeholder="I am disabled" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
+                </div>
+            </div>
+            <!-- Readonly Input-->
+            <div class="my-2">
+                <label class="text-sm block text-gray-800">Readonly</label>
+                <div class="mt-1">
+                    <input type="text" name="example-readonly-input" readonly value="Value is read only" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
+                </div>
+            </div>
+            <!-- Required Input-->
+            <div class="my-2">
+                <label class="text-sm block text-gray-800">Required <span class="text-red-600 text-base">*</span></label>
+                <div class="mt-1">
+                    <input type="text" name="example-required-input" placeholder="This field is required" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
+                </div>
             </div>
         </div>
     </div>
