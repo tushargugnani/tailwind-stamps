@@ -37,7 +37,9 @@
 <body>
         <header>
             <div class="flex items-center justify-between h-14 border-b px-6">
-                <a href="/"><div class="text-2xl font-semibold text-gray-800">TailwindCSS Components</div></a>
+                <a href="/"><div class="text-2xl font-semibold text-gray-800 flex items-center">
+                  <img src="/images/logo.png" class="w-8 h-8 float-left mr-3" /> 
+                  <span class="text-sky-700">Tailwind Stamps</span></div></a>
                 <div>
                   <a href="https://github.com/tushargugnani/tailwindcss-components" target="_blank">
                     <img class="w-8 h-8 rounded-full m-1 bg-gradient-to-r from-green-300 to-blue-200 hover:from-pink-500 hover:to-yellow-500" src="/images/github-icon.png" alt="tailwind free componenets github" />
@@ -47,7 +49,7 @@
     </header>
 
    <div class="flex">
-    <aside class="w-64 h-screen sticky top-0 border-r pt-5 mr-5 pr-5 text-gray-700">
+    <aside class="w-64 h-screen sticky top-0 hidden md:block border-r pt-5 mr-5 pr-5 text-gray-700">
     <span class="text-sm font-semibold ml-4">Base</span>
     
             <a href="/components/accordion/">
@@ -111,7 +113,7 @@
                 </div>
             </a>
 </aside>
-    <div class="container max-w-screen-lg pt-5 mx-5">
+    <div class="container max-w-screen-md pt-5 mx-5">
         
 
        <h2 class="text-3xl font-semibold text-gray-800 my-3">Button Group</h2>
