@@ -6,7 +6,7 @@ eleventyNavigation:
   parent: Base
 ---
 <h2 class="text-3xl font-semibold text-gray-800 my-3">Toggle</h2>
-<!-- Horizonal Divider-->
+<!-- Toggle Switch Big-->
 <div class="my-10">
 <h4 class="my-2 text-lg text-gray-700 font-medium">Toggle Switch <span class="ml-2 p-1 rounded text-xs bg-gray-400 text-white">Uses AlpineJS</span></h4>
 <div class="tailwind-example border rounded-t p-3 flex justify-center">
@@ -18,4 +18,67 @@ eleventyNavigation:
     </div>
 </div>
 </div>
-<!-- Horizonal Divider circled-->
+<!-- Toggle Switch Sleek-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Toggle Switch Sleek<span class="ml-2 p-1 rounded text-xs bg-gray-400 text-white">Uses AlpineJS</span></h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="flex items-center justify-start" x-data="{enabled: false}">
+            <button  @click="enabled = !enabled" type="button" class="bg-gray-200 relative inline-flex flex-shrink-0 h-5 w-10 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :class="enabled && 'bg-indigo-600'" role="switch" aria-checked="false">
+                <span class="sr-only">Sleek Toggle</span>
+                <span aria-hidden="true" class="pointer-events-none inline-block h-4 w-4 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200" :class="enabled && 'translate-x-5'"></span>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Single Switch with Label-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Single Switch with Label<span class="ml-2 p-1 rounded text-xs bg-gray-400 text-white">Uses AlpineJS</span></h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div x-data="{enabled: false}">
+            <label class="flex items-center justify-start ">
+            <span class="order-2 text-gray-800 text-sm ml-3">I agree with terms and conditions</span>
+            <button  @click="enabled = !enabled" type="button" class="order-1 bg-gray-200 relative inline-flex flex-shrink-0 h-5 w-10 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :class="enabled && 'bg-indigo-600'" role="switch" aria-checked="false">
+                <span class="sr-only">Sleek Toggle</span>
+                <span aria-hidden="true" class="pointer-events-none inline-block h-4 w-4 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200" :class="enabled && 'translate-x-5'"></span>
+            </button>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- Multiple Switches with Label-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Multiple Switches with Label<span class="ml-2 p-1 rounded text-xs bg-gray-400 text-white">Uses AlpineJS</span></h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="w-80">
+        <label class="mb-2 block">Notifications</label>
+        <div class="border-b py-3" x-data="{enabled: false}">
+            <label class="flex items-center justify-between">
+            <span class="text-gray-800 text-sm">Push Notifications</span>
+            <button  @click="enabled = !enabled" type="button" class="bg-gray-200 relative inline-flex flex-shrink-0 h-5 w-10 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :class="enabled && 'bg-indigo-600'" role="switch" aria-checked="false">
+                <span class="sr-only">Sleek Toggle</span>
+                <span aria-hidden="true" class="pointer-events-none inline-block h-4 w-4 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200" :class="enabled && 'translate-x-5'"></span>
+            </button>
+            </label>
+        </div>
+        <div class="border-b py-3" x-data="{enabled: false}">
+            <label class="flex items-center justify-between">
+            <span class="text-gray-800 text-sm">SMS Notifications</span>
+            <button  @click="enabled = !enabled" type="button" class="bg-gray-200 relative inline-flex flex-shrink-0 h-5 w-10 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :class="enabled && 'bg-indigo-600'" role="switch" aria-checked="false">
+                <span class="sr-only">Sleek Toggle</span>
+                <span aria-hidden="true" class="pointer-events-none inline-block h-4 w-4 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200" :class="enabled && 'translate-x-5'"></span>
+            </button>
+            </label>
+        </div>
+        <div class="border-b py-3" x-data="{enabled: false}">
+            <label class="flex items-center justify-between">
+            <span class="text-gray-800 text-sm">Email Notifications</span>
+            <button  @click="enabled = !enabled" type="button" class="bg-gray-200 relative inline-flex flex-shrink-0 h-5 w-10 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" :class="enabled && 'bg-indigo-600'" role="switch" aria-checked="false">
+                <span class="sr-only">Sleek Toggle</span>
+                <span aria-hidden="true" class="pointer-events-none inline-block h-4 w-4 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200" :class="enabled && 'translate-x-5'"></span>
+            </button>
+            </label>
+        </div>
+
+        </div>
+    </div>
+</div>
