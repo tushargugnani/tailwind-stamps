@@ -1,4 +1,4 @@
-<aside class="w-64 h-screen sticky top-0 border-r pt-5 mr-5 pr-5 text-gray-700">
+<aside class="w-64 h-screen sticky top-0 hidden md:block border-r pt-5 mr-5 pr-5 text-gray-700">
     <span class="text-sm font-semibold ml-4">Base</span>
     {% set navPages = collections.all | eleventyNavigation("Base") %}
         {%- for entry in navPages %}
