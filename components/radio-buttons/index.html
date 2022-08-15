@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Badge</title>
+    <title>Tailwind Radio Buttons</title>
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/prism.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -68,7 +68,7 @@
                 </div>
             </a>
             <a href="/components/badge/">
-                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer  bg-blue-100 border-blue-300 ">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
                     Badge
                 </div>
             </a>
@@ -108,7 +108,7 @@
                 </div>
             </a>
             <a href="/components/radio-buttons/">
-                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer  bg-blue-100 border-blue-300 ">
                     Radio Buttons
                 </div>
             </a>
@@ -126,95 +126,118 @@
     <div class="container max-w-screen-md pt-5 mx-5">
         
 
-       <h2 class="text-3xl font-semibold text-gray-800 my-3">Badges</h2>
-<!-- Badge-->
+       <h2 class="text-3xl font-semibold text-gray-800 my-3">Radio Buttons</h2>
+<!-- Radio Buttons-->
 <div class="my-10">
-    <h4 class="my-2 text-lg text-gray-700 font-medium">Button Badges</h4>
-    <div class="tailwind-example border rounded-t p-2 text-center text-sm">
-        <button type="button" class="rounded bg-blue-500 hover:bg-blue-700 p-2 text-white font">
-            Notifications <span class="rounded bg-gray-100 text-black py-0.25 px-1">4</span>
-        </button>
+<h4 class="my-2 text-lg text-gray-700 font-medium">Radio Buttons</h4>
+<div class="tailwind-example border rounded-t p-3 flex justify-center">
+    <div class="w-max">
+        <label class="block text-gray-700 my-1 flex items-center">
+            <input type="radio" name="radio-example" class="mr-2 w-4 h-4" checked/>
+            <span>Option 1</span>
+        </label>
+        <label class="block text-gray-700 my-1 flex items-center">
+            <input type="radio" name="radio-example" class="mr-2 w-4 h-4"/>
+            <span>Option 2</span>
+        </label>
+        <label class="block text-gray-700 my-1 flex items-center">
+            <input type="radio" name="radio-example" class="mr-2 w-4 h-4"/>
+            <span>Option 3</span>
+        </label>
     </div>
 </div>
-
-<div class="my-10">
-<h4 class="my-2 text-lg text-gray-700 font-medium">Color Badges</h4>
-    <div class="tailwind-example border rounded-t p-2 text-center text-sm">
-        <span class="py-0.5 px-1 rounded bg-blue-500 text-white text-xs">Primary</span>
-        <span class="py-0.5 px-1 rounded bg-gray-500 text-white text-xs">Secondary</span>
-        <span class="py-0.5 px-1 rounded bg-green-500 text-white text-xs">Success</span>
-        <span class="py-0.5 px-1 rounded bg-red-500 text-white text-xs">Danger</span>
-        <span class="py-0.5 px-1 rounded bg-yellow-500 text-white text-xs">Warning</span>
-        <span class="py-0.5 px-1 rounded bg-teal-500 text-white text-xs">Info</span>
-        <span class="py-0.5 px-1 rounded bg-gray-200 text-black text-xs">Light</span>
-        <span class="py-0.5 px-1 rounded bg-gray-800 text-white text-xs">Dark</span>
-    </div>
 </div>
-
+<!-- Inline Radio Buttons-->
 <div class="my-10">
-<h4 class="my-2 text-lg text-gray-700 font-medium">Pill Badges</h4>
-    <div class="tailwind-example border rounded-t p-2 text-center text-sm">
-        <span class="py-0.5 px-1 rounded-full bg-blue-500 text-white text-xs">Primary</span>
-        <span class="py-0.5 px-1 rounded-full bg-gray-500 text-white text-xs">Secondary</span>
-        <span class="py-0.5 px-1 rounded-full bg-green-500 text-white text-xs">Success</span>
-        <span class="py-0.5 px-1 rounded-full bg-red-500 text-white text-xs">Danger</span>
-        <span class="py-0.5 px-1 rounded-full bg-yellow-500 text-white text-xs">Warning</span>
-        <span class="py-0.5 px-1 rounded-full bg-teal-500 text-white text-xs">Info</span>
-        <span class="py-0.5 px-1 rounded-full bg-gray-200 text-black text-xs">Light</span>
-        <span class="py-0.5 px-1 rounded-full bg-gray-800 text-white text-xs">Dark</span>
-    </div>
-</div>
-
-
-<div class="my-10">
-    <h4 class="my-2 text-lg text-gray-700 font-medium">Tags with remove button</h4>
-        <div class="tailwind-example border rounded-t p-2 text-center text-sm flex justify-center">
-            <!-- Tag 1-->
-            <div class="rounded-full border border-blue-500 flex items-center w-max py-1 px-3 bg-blue-400 mx-1">
-                <div class="text-blue-100 mr-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <span class="text-white font-semibold">Laravel</span> 
-                <div class="ml-2 cursor-pointer rounded-full bg-blue-100 text-gray-500 hover:bg-gray-200">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-                </div>
-            </div>
-
-            <!--Tag 2-->
-            <div class="rounded-full border border-blue-500 flex items-center w-max py-1 px-3 bg-blue-400 mx-1">
-                <div class="text-blue-100 mr-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <span class="text-white font-semibold">Livewire</span> 
-                <div class="ml-2 cursor-pointer rounded-full bg-blue-100 text-gray-500 hover:bg-gray-200">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-                </div>
-            </div>
-
-            <!--Tag 3-->
-            <div class="rounded-full border border-blue-500 flex items-center w-max py-1 px-3 bg-blue-400 mx-1">
-                <div class="text-blue-100 mr-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <span class="text-white font-semibold">Alpine JS</span> 
-                <div class="ml-2 cursor-pointer rounded-full bg-blue-50 text-gray-500 hover:bg-gray-200">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-                </div>
-            </div>
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Inline Radio Buttons</h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="w-max flex">
+            <label class="text-gray-700 my-1 flex items-center mr-4">
+                <input type="radio" name="radio-example" class="mr-2 w-4 h-4" checked/>
+                <span>Option 1</span>
+            </label>
+            <label class="text-gray-700 my-1 flex items-center mr-4">
+                <input type="radio" name="radio-example" class="mr-2 w-4 h-4"/>
+                <span>Option 2</span>
+            </label>
+            <label class="text-gray-700 my-1 flex items-center mr-4">
+                <input type="radio" name="radio-example" class="mr-2 w-4 h-4"/>
+                <span>Option 3</span>
+            </label>
         </div>
+    </div>
 </div>
+<!-- Radio Buttons with Description-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Radio Buttons with Description</h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="w-max">
+            <label class="block text-gray-700 mb-3 flex">
+                <input type="radio" name="radio-example" class="mr-2 w-4 h-4" checked/>
+                <div class="-mt-1">
+                     <span>Option 1</span>
+                     <p class="text-gray-500 text-sm">This is the description of option 1</p>
+                </div>
+            </label>
+            <label class="block text-gray-700 mb-3 flex">
+                <input type="radio" name="radio-example" class="mr-2 w-4 h-4"/>
+                <div class="-mt-1">
+                    <span>Option 2</span>
+                    <p class="text-gray-500 text-sm">This is the description of option 2</p>
+               </div>            
+            </label>
+            <label class="block text-gray-700 mb-3 flex">
+                <input type="radio" name="radio-example" class="mr-2 w-4 h-4"/>
+                <div class="-mt-1">
+                    <span>Option 3</span>
+                    <p class="text-gray-500 text-sm">This is the description of option 3</p>
+               </div>  
+            </label>
+        </div>
+    </div>
+    </div>
+<!-- Payment Methods-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Payment Methods</h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="w-72">
+                <div class="mb-3 relative">
+                    <input type="radio" name="radio-example" class="sr-only peer" checked value="visa" id="answer_visa"/>
+                    <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="answer_visa">
+                        <div class="flex items-center">
+                            <img src="/images/payment-icons/visa.svg" alt="VISA" class="w-6 h-4 mr-2"/>
+                            <div class="text-sm ">Card Ending <span class="font-semibold"> 6475</span></div>
+                        </div>
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <input type="radio" name="radio-example" class="sr-only peer" value="master-card" id="answer_master-card"/>
+                    <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="answer_master-card">
+                        <div class="flex items-center">
+                            <img src="/images/payment-icons/master-card.svg" alt="VISA" class="w-6 h-6 mr-2"/>
+                            <div class="text-sm ">Card Ending <span class="font-semibold"> 4743</span></div>
+                        </div>
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <input type="radio" name="radio-example" class="sr-only peer" value="paypal" id="answer_paypal"/>
+                    <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="answer_paypal">
+                        <div class="flex items-center">
+                            <img src="/images/payment-icons/paypal.svg" alt="VISA" class="w-6 h-5 mr-2"/>
+                            <div class="text-sm ">Paypal</div>
+                        </div>
+                    </label>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
         
     </div>
     </div>
