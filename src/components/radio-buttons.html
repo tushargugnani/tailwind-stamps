@@ -1,0 +1,118 @@
+---
+layout: base.njk
+title: Tailwind Radio Buttons
+eleventyNavigation:
+  key: Radio Buttons
+  parent: Base
+---
+<h2 class="text-3xl font-semibold text-gray-800 my-3">Radio Buttons</h2>
+<!-- Radio Buttons-->
+<div class="my-10">
+<h4 class="my-2 text-lg text-gray-700 font-medium">Radio Buttons</h4>
+<div class="tailwind-example border rounded-t p-3 flex justify-center">
+    <div class="w-max">
+        <label class="block text-gray-700 my-1 flex items-center">
+            <input type="radio" name="radio-example" class="mr-2 w-4 h-4" checked/>
+            <span>Option 1</span>
+        </label>
+        <label class="block text-gray-700 my-1 flex items-center">
+            <input type="radio" name="radio-example" class="mr-2 w-4 h-4"/>
+            <span>Option 2</span>
+        </label>
+        <label class="block text-gray-700 my-1 flex items-center">
+            <input type="radio" name="radio-example" class="mr-2 w-4 h-4"/>
+            <span>Option 3</span>
+        </label>
+    </div>
+</div>
+</div>
+<!-- Inline Radio Buttons-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Inline Radio Buttons</h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="w-max flex">
+            <label class="text-gray-700 my-1 flex items-center mr-4">
+                <input type="radio" name="radio-example" class="mr-2 w-4 h-4" checked/>
+                <span>Option 1</span>
+            </label>
+            <label class="text-gray-700 my-1 flex items-center mr-4">
+                <input type="radio" name="radio-example" class="mr-2 w-4 h-4"/>
+                <span>Option 2</span>
+            </label>
+            <label class="text-gray-700 my-1 flex items-center mr-4">
+                <input type="radio" name="radio-example" class="mr-2 w-4 h-4"/>
+                <span>Option 3</span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- Radio Buttons with Description-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Radio Buttons with Description</h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="w-max">
+            <label class="block text-gray-700 mb-3 flex">
+                <input type="radio" name="radio-example" class="mr-2 w-4 h-4" checked/>
+                <div class="-mt-1">
+                     <span>Option 1</span>
+                     <p class="text-gray-500 text-sm">This is the description of option 1</p>
+                </div>
+            </label>
+            <label class="block text-gray-700 mb-3 flex">
+                <input type="radio" name="radio-example" class="mr-2 w-4 h-4"/>
+                <div class="-mt-1">
+                    <span>Option 2</span>
+                    <p class="text-gray-500 text-sm">This is the description of option 2</p>
+               </div>            
+            </label>
+            <label class="block text-gray-700 mb-3 flex">
+                <input type="radio" name="radio-example" class="mr-2 w-4 h-4"/>
+                <div class="-mt-1">
+                    <span>Option 3</span>
+                    <p class="text-gray-500 text-sm">This is the description of option 3</p>
+               </div>  
+            </label>
+        </div>
+    </div>
+    </div>
+<!-- Payment Methods-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Payment Methods</h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="w-72">
+                <div class="mb-3 relative">
+                    <input type="radio" name="radio-example" class="sr-only peer" checked value="visa" id="answer_visa"/>
+                    <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="answer_visa">
+                        <div class="flex items-center">
+                            <img src="/images/payment-icons/visa.svg" alt="VISA" class="w-6 h-4 mr-2"/>
+                            <div class="text-sm ">Card Ending <span class="font-semibold"> 6475</span></div>
+                        </div>
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <input type="radio" name="radio-example" class="sr-only peer" value="master-card" id="answer_master-card"/>
+                    <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="answer_master-card">
+                        <div class="flex items-center">
+                            <img src="/images/payment-icons/master-card.svg" alt="VISA" class="w-6 h-6 mr-2"/>
+                            <div class="text-sm ">Card Ending <span class="font-semibold"> 4743</span></div>
+                        </div>
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <input type="radio" name="radio-example" class="sr-only peer" value="paypal" id="answer_paypal"/>
+                    <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="answer_paypal">
+                        <div class="flex items-center">
+                            <img src="/images/payment-icons/paypal.svg" alt="VISA" class="w-6 h-5 mr-2"/>
+                            <div class="text-sm ">Paypal</div>
+                        </div>
+                    </label>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
