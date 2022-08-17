@@ -1,0 +1,89 @@
+---
+layout: base.njk
+title: Tailwind Checkboxes
+eleventyNavigation:
+  key: Checkbox
+  parent: Base
+---
+<h2 class="text-3xl font-semibold text-gray-800 my-3">Checkbox</h2>
+<!-- CheckBoxes-->
+<div class="my-10">
+<h4 class="my-2 text-lg text-gray-700 font-medium">Checkbox</h4>
+<div class="tailwind-example border rounded-t p-3 flex justify-center">
+    <div class="w-max">
+        <label class="block text-gray-700 my-1 flex items-center">
+            <input type="checkbox" name="radio-example" class="mr-2 w-4 h-4 focus:ring-2" checked/>
+            <span>Option 1</span>
+        </label>
+        <label class="block text-gray-700 my-1 flex items-center">
+            <input type="checkbox" name="radio-example" class="mr-2 w-4 h-4 focus:ring-2"/>
+            <span>Option 2</span>
+        </label>
+        <label class="block text-gray-700 my-1 flex items-center">
+            <input type="checkbox" name="radio-example" class="mr-2 w-4 h-4 focus:ring-2"/>
+            <span>Option 3</span>
+        </label>
+    </div>
+</div>
+</div>
+<!-- Inline Checkboxes-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Inline CheckBox</h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="w-max flex">
+            <label class="text-gray-700 my-1 flex items-center mr-4">
+                <input type="checkbox" name="radio-example" class="mr-2 w-4 h-4 focus:ring-2" checked/>
+                <span>Option 1</span>
+            </label>
+            <label class="text-gray-700 my-1 flex items-center mr-4">
+                <input type="checkbox" name="radio-example" class="mr-2 w-4 h-4 focus:ring-2"/>
+                <span>Option 2</span>
+            </label>
+            <label class="text-gray-700 my-1 flex items-center mr-4">
+                <input type="checkbox" name="radio-example" class="mr-2 w-4 h-4 focus:ring-2"/>
+                <span>Option 3</span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- Checkboxes with Description-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Checkbox with Description</h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="w-96">
+            <label class="flex items-start space-x-3 mb-3">
+                <div>
+                    <input type="checkbox" value="defualt-checkbox" class="peer w-4 h-4">
+                </div>
+                <div class="-mt-0.5">
+                    <span class="text-gray-800 ">Default Checkbox</span>
+                    <span class="block text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur ...</span>
+                </div>
+            </label>
+            <label class="flex items-start space-x-3 mb-3">
+                <div>
+                    <input type="checkbox" value="logner-description" class="w-4 h-4">
+                </div>
+                <div class="-mt-0.5">
+                    <span class="text-gray-800">Longer checkbox items that wraps on to seperate lines</span>
+                    <span class="block text-sm text-gray-500">Lorem ipsum dolor sit asdf as asdf asf asd fasf af a asf as asdf asdfa</span>
+                </div>
+            </label>
+            <label class="flex items-start space-x-3 mb-3">
+                <div>
+                    <input type="checkbox" value="no-description" class="w-4 h-4">
+                </div>
+                <div class="-mt-0.5">
+                    <span class="text-gray-800">Checkbox with no description</span>
+                </div>
+            </label>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
