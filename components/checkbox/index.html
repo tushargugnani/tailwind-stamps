@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Buttons</title>
+    <title>Tailwind Checkboxes</title>
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/prism.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -78,12 +78,12 @@
                 </div>
             </a>
             <a href="/components/buttons/">
-                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer  bg-blue-100 border-blue-300 ">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
                     Buttons
                 </div>
             </a>
             <a href="/components/checkbox/">
-                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer  bg-blue-100 border-blue-300 ">
                     Checkbox
                 </div>
             </a>
@@ -131,76 +131,84 @@
     <div class="container max-w-screen-md pt-5 mx-5">
         
 
-       <h2 class="text-3xl font-semibold text-gray-800 my-3">Buttons</h2>
-<!-- Horizonal Divider-->
+       <h2 class="text-3xl font-semibold text-gray-800 my-3">Checkbox</h2>
+<!-- CheckBoxes-->
 <div class="my-10">
-<h4 class="my-2 text-lg text-gray-700 font-medium">Buttons</h4>
+<h4 class="my-2 text-lg text-gray-700 font-medium">Checkbox</h4>
 <div class="tailwind-example border rounded-t p-3 flex justify-center">
-    <button class="p-2 rounded bg-blue-500 hover:bg-blue-600 text-white border-blue-700 mx-1">Primary</button>
-    <button class="p-2 rounded bg-gray-500 hover:bg-gray-600 text-white border-gray-700 mx-1">Secondary</button>
-    <button class="p-2 rounded bg-green-500 hover:bg-green-600 text-white border-gray-700 mx-1">Success</button>
-    <button class="p-2 rounded bg-red-500 hover:bg-red-600 text-white border-gray-700 mx-1">Danger</button>
-    <button class="p-2 rounded bg-yellow-500 hover:bg-yellow-600 text-white border-gray-700 mx-1">Warning</button>
-    <button class="p-2 rounded bg-sky-500 hover:bg-sky-600 text-white border-gray-700 mx-1">Info</button>
-    <button class="p-2 rounded bg-gray-800 hover:bg-black text-white border-gray-700 mx-1">Dark</button>
+    <div class="w-max">
+        <label class="block text-gray-700 my-1 flex items-center">
+            <input type="checkbox" name="radio-example" class="mr-2 w-4 h-4 focus:ring-2" checked/>
+            <span>Option 1</span>
+        </label>
+        <label class="block text-gray-700 my-1 flex items-center">
+            <input type="checkbox" name="radio-example" class="mr-2 w-4 h-4 focus:ring-2"/>
+            <span>Option 2</span>
+        </label>
+        <label class="block text-gray-700 my-1 flex items-center">
+            <input type="checkbox" name="radio-example" class="mr-2 w-4 h-4 focus:ring-2"/>
+            <span>Option 3</span>
+        </label>
+    </div>
 </div>
 </div>
-
+<!-- Inline Checkboxes-->
 <div class="my-10">
-    <h4 class="my-2 text-lg text-gray-700 font-medium">Button with Icons</h4>
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Inline CheckBox</h4>
     <div class="tailwind-example border rounded-t p-3 flex justify-center">
-        <button class="flex items-center p-2 rounded bg-blue-500 hover:bg-blue-600 text-white border-blue-700 mx-1">
-            <div class="mx-1">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-            </svg>
-            </div>
-            <span class="mx-2">Print</span>
-        </button>
+        <div class="w-max flex">
+            <label class="text-gray-700 my-1 flex items-center mr-4">
+                <input type="checkbox" name="radio-example" class="mr-2 w-4 h-4 focus:ring-2" checked/>
+                <span>Option 1</span>
+            </label>
+            <label class="text-gray-700 my-1 flex items-center mr-4">
+                <input type="checkbox" name="radio-example" class="mr-2 w-4 h-4 focus:ring-2"/>
+                <span>Option 2</span>
+            </label>
+            <label class="text-gray-700 my-1 flex items-center mr-4">
+                <input type="checkbox" name="radio-example" class="mr-2 w-4 h-4 focus:ring-2"/>
+                <span>Option 3</span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- Checkboxes with Description-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Checkbox with Description</h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="w-96">
+            <label class="flex items-start space-x-3 mb-3">
+                <div>
+                    <input type="checkbox" value="defualt-checkbox" class="peer w-4 h-4">
+                </div>
+                <div class="-mt-0.5">
+                    <span class="text-gray-800 ">Default Checkbox</span>
+                    <span class="block text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur ...</span>
+                </div>
+            </label>
+            <label class="flex items-start space-x-3 mb-3">
+                <div>
+                    <input type="checkbox" value="logner-description" class="w-4 h-4">
+                </div>
+                <div class="-mt-0.5">
+                    <span class="text-gray-800">Longer checkbox items that wraps on to seperate lines</span>
+                    <span class="block text-sm text-gray-500">Lorem ipsum dolor sit asdf as asdf asf asd fasf af a asf as asdf asdfa</span>
+                </div>
+            </label>
+            <label class="flex items-start space-x-3 mb-3">
+                <div>
+                    <input type="checkbox" value="no-description" class="w-4 h-4">
+                </div>
+                <div class="-mt-0.5">
+                    <span class="text-gray-800">Checkbox with no description</span>
+                </div>
+            </label>
+        </div>
     </div>
 </div>
 
 
-<div class="my-10">
-    <h4 class="my-2 text-lg text-gray-700 font-medium">Gradient Button</h4>
-    <div class="tailwind-example border rounded-t p-3 flex justify-center">
-        <button class="rounded bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white p-2 font-semibold">Hover me</button>
-    </div>
-</div>
 
-
-<div class="my-10">
-    <h4 class="my-2 text-lg text-gray-700 font-medium">Self Confirm Button <span class="ml-2 p-1 rounded text-xs bg-gray-400 text-white">Uses AlpineJS</span></h4>
-    <div class="tailwind-example border rounded-t p-3 flex justify-center">
-        <button x-data="{
-            confirmAction : false,
-            buttonText : 'Delete',
-            confirm(){
-                if(this.confirmAction == true){
-                    alert('fire action');
-                }
-                this.confirmAction = true;
-                this.buttonText = 'Confirm Delete?'
-            },
-            cancelConfirm(){
-                this.confirmAction = false;
-                this.buttonText = 'Delete'
-            }
-        }"
-            type="button"
-            class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
-            @click="confirm"
-            :class="confirmAction ? 'bg-red-100 text-red-600 hover:bg-red-200 focus:ring-red-500' : 'bg-purple-500'"
-        >
-            <span x-text="buttonText"></span>
-            <template x-if="confirmAction">
-                <svg @click.stop="cancelConfirm" xmlns="http://www.w3.org/2000/svg" class="rounded-full h-4 w-4 ml-2 hover:bg-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-            </template>
-        </button>
-    </div>
-</div>
 
 
 
