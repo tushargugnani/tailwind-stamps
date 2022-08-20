@@ -2,7 +2,18 @@
 module.exports = {
   content: ["./src/**/*.{html,js,njk}"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        progress: {
+          '0%': { left: '-100%' },
+          '50%': { left: '100%' },
+          '100%': { left: '-100%' },
+        },
+      },
+      animation: {
+        progress: 'progress 3s linear infinite',
+      },
+    },
   },
   plugins: [],
 }

@@ -155,3 +155,26 @@ eleventyNavigation:
 </div>
 </div>
 
+
+<div class="my-10">
+    <!-- Progress Bar Single Colour-->
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Loading Progress Bar</h4>
+    <div class="tailwind-example border rounded-t p-3">
+        <!-- Extend Config to Add custom Animation
+        keyframes: {
+        progress: {
+          '0%': { left: '-100%' },
+          '50%': { left: '100%' },
+          '100%': { left: '-100%' },
+          },
+        },
+        animation: {
+           progress: 'progress 3s linear infinite',
+         },
+        -->
+        <div class="relative h-4 rounded-full bg-gray-300 overflow-hidden">
+            <div id="progress" class="animate-progress absolute h-full w-1/2 rounded-full bg-green-500"></div>
+        </div>
+    </div>
+</div>
+
