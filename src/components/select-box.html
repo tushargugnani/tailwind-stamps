@@ -10,6 +10,20 @@ eleventyNavigation:
 <div class="my-10">
 <h4 class="my-2 text-lg text-gray-700 font-medium">Select Box</h4>
 <div class="tailwind-example border rounded-t p-3">
+    <!--
+        This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+    -->
     <div class="mx-auto w-full max-w-xs">
         <label class="text-sm text-gray-800">Select Box</label>
         <div class="mt-1">
