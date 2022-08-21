@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Input Box</title>
+    <title>Tailwind Search Box</title>
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/prism.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -103,7 +103,7 @@
                 </div>
             </a>
             <a href="/components/input-box/">
-                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer  bg-blue-100 border-blue-300 ">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
                     Input Box
                 </div>
             </a>
@@ -128,7 +128,7 @@
                 </div>
             </a>
             <a href="/components/select-box/">
-                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer ">
+                <div class="p-2 ml-5 my-2 text-sm border rounded hover:border-blue-500 cursor-pointer  bg-blue-100 border-blue-300 ">
                     Select Box
                 </div>
             </a>
@@ -141,115 +141,36 @@
     <div class="container max-w-screen-md pt-5 mx-5">
         
 
-       <h2 class="text-3xl font-semibold text-gray-800 my-3">Input Box</h2>
-<!-- Input Box-->
+       <h2 class="text-3xl font-semibold text-gray-800 my-3">Select Box</h2>
+<!-- Horizonal Divider-->
 <div class="my-10">
-    <h4 class="my-2 text-lg text-gray-700 font-medium">Input Box</h4>
-    <div class="tailwind-example border rounded-t p-3 flex justify-center">
-        <div>
-            <!-- Text Input-->
-            <div class="my-2">
-                <label class="text-sm block text-gray-800">Full Name</label>
-                <div class="mt-1">
-                    <input type="text" name="example-text-input" placeholder="Enter your fullname" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
-                </div>
-            </div>
-            <!-- Password Input-->
-            <div class="my-2">
-                <label class="text-sm block text-gray-800">Password</label>
-                <div class="mt-1">
-                    <input type="password" name="example-password-input" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
-                </div>
-            </div>
-            <!-- Disabled Input-->
-            <div class="my-2">
-                <label class="text-sm block text-gray-800">Disabled</label>
-                <div class="mt-1">
-                    <input type="text" name="example-disabled-input" disabled placeholder="I am disabled" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
-                </div>
-            </div>
-            <!-- Readonly Input-->
-            <div class="my-2">
-                <label class="text-sm block text-gray-800">Readonly</label>
-                <div class="mt-1">
-                    <input type="text" name="example-readonly-input" readonly value="Value is read only" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
-                </div>
-            </div>
-            <!-- Required Input-->
-            <div class="my-2">
-                <label class="text-sm block text-gray-800">Required <span class="text-red-600 text-base">*</span></label>
-                <div class="mt-1">
-                    <input type="text" name="example-required-input" placeholder="This field is required" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
-                </div>
-            </div>
-            <!-- Required Input-->
-            <div class="my-2">
-                <label class="text-sm block text-gray-800">Help Text Input</label>
-                <div class="mt-1">
-                    <input type="text" name="example-required-input" placeholder="This field is required" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
-                    <span class="text-gray-400 block text-sm mt-1">This is a muted help text</span>
-                </div>
-            </div>
+<h4 class="my-2 text-lg text-gray-700 font-medium">Select Box</h4>
+<div class="tailwind-example border rounded-t p-3">
+    <!--
+        This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+    -->
+    <div class="mx-auto w-full max-w-xs">
+        <label class="text-sm text-gray-800">Select Box</label>
+        <div class="mt-1">
+          <select class="mt-1 block w-full rounded-md border border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+            <option value="1">Apple</option>
+            <option value="2">Banana</option>
+            <option value="3">Orange</option>
+          </select>
         </div>
-    </div>
+      </div>
 </div>
-
-
-<div class="my-10">
-    <h4 class="my-2 text-lg text-gray-700 font-medium">Legend Style Input Box</h4>
-    <div class="tailwind-example border rounded-t p-3 flex justify-center">
-        <div class="relative">
-            <label class="absolute bg-white px-1 text-sm block text-gray-800 bottom-7 left-2">Full Name</label>
-            <div class="mt-1">
-                <input type="text" placeholder="Enter your fullname" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-10 p-3 pt-5 text-sm"/>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="my-10">
-    <h4 class="my-2 text-lg text-gray-700 font-medium">Floating Input Boxes</h4>
-    <div class="tailwind-example border rounded-t p-3 flex justify-center">
-        <div>
-        <div class="relative mb-3">
-            <label class="absolute bg-white px-1 text-xs block text-gray-600 top-2 left-2">Email</label>
-            <div class="mt-1">
-                <input type="text" value="name@example.com" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-14 p-3 pt-8 text-sm"/>
-            </div>
-        </div>
-        <div class="relative mb-3">
-            <label class="absolute bg-white px-1 text-xs block text-gray-600 top-2 left-2">Password</label>
-            <div class="mt-1">
-                <input type="password" value="xyz123"  class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-14 p-3 pt-8 text-sm"/>
-            </div>
-        </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="my-10">
-    <h4 class="my-2 text-lg text-gray-700 font-medium">Show Hide Password Field</h4>
-    <div class="tailwind-example border rounded-t p-3 flex justify-center">
-        <div x-data="{
-            showPassword : false
-          }" class="w-64">
-            <label for="password" class="block text-sm font-medium text-gray-600">Password</label>
-            <div  class="mt-1 relative rounded-md shadow-sm">
-              <input :type="showPassword ? 'text' : 'password'" name="password" id="password" class="border p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full pr-10 sm:text-sm border-gray-300 rounded-md" placeholder="Enter password">
-              <div x-on:click="showPassword = !showPassword" class="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer text-gray-500">
-                <svg x-show="showPassword" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                </svg>
-                <svg x-show="!showPassword" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
-                </svg>
-              </div>
-            </div>
-          </div>
-    </div>
 </div>
 
         
