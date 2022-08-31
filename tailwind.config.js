@@ -17,5 +17,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tushargugnani/tailwind-group-peer-checked')
   ],
 }

@@ -80,6 +80,143 @@ eleventyNavigation:
         </div>
     </div>
 </div>
+<!-- CheckBoxes-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Boxed checkbox options</h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+            <!--
+        This example requires some changes to your config:
+  
+            ```
+            // tailwind.config.js
+            module.exports = {
+                // ...
+                plugins: [
+                // ...
+                require('@tushargugnani/tailwind-group-peer-checked'),
+                ],
+            }
+            ```
+                -->
+        <div class="w-96">
+            <label>
+              <input type="checkbox" name="form-project-manager[]" value="1" class="peer sr-only" />
+              <div class="group mb-3 flex items-center rounded border p-3 ring-offset-2 peer-checked:border-blue-500 peer-checked:bg-blue-50 peer-focus:ring-2">
+                <div class="mr-3">
+                  <div class="mr-2 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md border-2 border-blue-300 bg-white focus-within:border-blue-500">
+                    <svg class="group-peer-checked:block pointer-events-none hidden h-3 w-3 fill-current text-white" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+                      <g fill="none" fill-rule="evenodd">
+                        <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+                          <path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="mr-3 h-10 w-10 rounded-full bg-[url('https://i.pravatar.cc/50?img=3')] bg-cover"></div>
+                  <div>
+                    <div class="font-semibold">Katick Ramson</div>
+                    <div class="text-gray-700">Full Stack Developer</div>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <label>
+              <input type="checkbox" name="form-project-manager[]" value="1" class="peer sr-only" />
+              <div class="group mb-3 flex items-center rounded border p-3 ring-offset-2 peer-checked:border-blue-500 peer-checked:bg-blue-50 peer-focus:ring-2">
+                <div class="mr-3">
+                  <div class="mr-2 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md border-2 border-blue-300 bg-white focus-within:border-blue-500">
+                    <svg class="group-peer-checked:block pointer-events-none hidden h-3 w-3 fill-current text-white" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+                      <g fill="none" fill-rule="evenodd">
+                        <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+                          <path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="mr-3 h-10 w-10 rounded-full bg-[url('https://i.pravatar.cc/50?img=4')] bg-cover"></div>
+                  <div>
+                    <div class="font-semibold">Richard Balmon</div>
+                    <div class="text-gray-700">Front End Developer</div>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <label>
+              <input type="checkbox" name="form-project-manager[]" value="1" class="peer sr-only" />
+              <div class="group mb-3 flex items-center rounded border p-3 ring-offset-2 peer-checked:border-blue-500 peer-checked:bg-blue-50 peer-focus:ring-2">
+                <div class="mr-3">
+                  <div class="mr-2 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md border-2 border-blue-300 bg-white focus-within:border-blue-500">
+                    <svg class="group-peer-checked:block pointer-events-none hidden h-3 w-3 fill-current text-white" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+                      <g fill="none" fill-rule="evenodd">
+                        <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+                          <path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="mr-3 h-10 w-10 rounded-full bg-[url('https://i.pravatar.cc/50?img=5')] bg-cover"></div>
+                  <div>
+                    <div class="font-semibold">Salomi Lu</div>
+                    <div class="text-gray-700">Product Manager</div>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <label>
+              <input type="checkbox" name="form-project-manager[]" value="1" class="peer sr-only" />
+              <div class="group mb-3 flex items-center rounded border p-3 ring-offset-2 peer-checked:border-blue-500 peer-checked:bg-blue-50 peer-focus:ring-2">
+                <div class="mr-3">
+                  <div class="mr-2 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md border-2 border-blue-300 bg-white focus-within:border-blue-500">
+                    <svg class="group-peer-checked:block pointer-events-none hidden h-3 w-3 fill-current text-white" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+                      <g fill="none" fill-rule="evenodd">
+                        <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+                          <path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="mr-3 h-10 w-10 rounded-full bg-[url('https://i.pravatar.cc/50?img=7')] bg-cover"></div>
+                  <div>
+                    <div class="font-semibold">Patrick Dixon</div>
+                    <div class="text-gray-700">Designer</div>
+                  </div>
+                </div>
+              </div>
+            </label>
+              <label>
+              <input type="checkbox" name="form-project-manager[]" value="1" class="peer sr-only" />
+              <div class="group mb-3 flex items-center rounded border p-3 ring-offset-2 peer-checked:border-blue-500 peer-checked:bg-blue-50 peer-focus:ring-2">
+                <div class="mr-3">
+                  <div class="mr-2 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md border-2 border-blue-300 bg-white focus-within:border-blue-500">
+                    <svg class="group-peer-checked:block pointer-events-none hidden h-3 w-3 fill-current text-white" version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+                      <g fill="none" fill-rule="evenodd">
+                        <g transform="translate(-9 -11)" fill="#1F73F1" fill-rule="nonzero">
+                          <path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="mr-3 h-10 w-10 rounded-full bg-[url('https://i.pravatar.cc/50?img=8')] bg-cover"></div>
+                  <div>
+                    <div class="font-semibold">John Doe</div>
+                    <div class="text-gray-700">Scrum Master</div>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+    </div>
+</div>
 
 
 
