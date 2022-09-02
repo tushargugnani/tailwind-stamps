@@ -344,9 +344,27 @@
        var tailwindExamples =  document.querySelectorAll('.tailwind-example');
        tailwindExamples.forEach(e => 
            {
+               var codeSvg = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">\
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />\
+                            </svg>';
+
                var componentCode = e.innerHTML;
-               var componentCodeWidget = '<div class="tailwind-clipboard bg-gray-100"><script type="text/plain" class="language-markup !m-0 !bg-gray-100 !text-sm">'+componentCode+'</scr' + 'ipt></div>';
+               componentCodeLinesCount = componentCode.split(/\r\n|\r|\n/).length;
+
+               var showButton = false;
+               var showCodeButton = '';
+               if(componentCodeLinesCount > 15){
+                    showButton = true;
+                    showCodeButton = '';
+               }
+               var componentCodeWidget = '<div x-data="{showButton : '+showButton+'}" class="relative tailwind-clipboard bg-gray-100" >\
+                                            <div :class="showButton ? \'h-48 overflow-y-hidden\' : \'overflow-auto h-full\'">\
+                                            <script type="text/plain" class="language-markup !m-0 !bg-gray-100 !text-sm">'+componentCode+'</scr' + 'ipt>\
+                                            </div>\
+                                            <button style="display:none" x-show="showButton" @click="showButton = false" class="rounded border border-orange-500 text-sm bg-orange-400 hover:bg-orange-500 max-w-max text-white px-1.5 py-0.5 absolute -bottom-2 left-0 right-0 mx-auto flex items-center">'+codeSvg+' Show Code</button>\
+                                          </div>';
                e.insertAdjacentHTML('afterend',componentCodeWidget);
+               
                //e.closest('.tailwind-component').querySelector('.language-markup').innerHTML = componentCode;
            }
        );
