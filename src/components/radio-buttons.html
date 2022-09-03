@@ -82,7 +82,7 @@ eleventyNavigation:
         <div class="w-72">
                 <div class="mb-3 relative">
                     <input type="radio" name="radio-example" class="sr-only peer" checked value="visa" id="answer_visa"/>
-                    <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="answer_visa">
+                    <label class="flex p-5 bg-white border  rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="answer_visa">
                         <div class="flex items-center">
                             <img src="/images/payment-icons/visa.svg" alt="VISA" class="w-6 h-4 mr-2"/>
                             <div class="text-sm ">Card Ending <span class="font-semibold"> 6475</span></div>
@@ -91,7 +91,7 @@ eleventyNavigation:
                 </div>
                 <div class="mb-3">
                     <input type="radio" name="radio-example" class="sr-only peer" value="master-card" id="answer_master-card"/>
-                    <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="answer_master-card">
+                    <label class="flex p-5 bg-white border  rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="answer_master-card">
                         <div class="flex items-center">
                             <img src="/images/payment-icons/master-card.svg" alt="VISA" class="w-6 h-6 mr-2"/>
                             <div class="text-sm ">Card Ending <span class="font-semibold"> 4743</span></div>
@@ -100,7 +100,7 @@ eleventyNavigation:
                 </div>
                 <div class="mb-3">
                     <input type="radio" name="radio-example" class="sr-only peer" value="paypal" id="answer_paypal"/>
-                    <label class="flex p-5 bg-white border border-gray-300 rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="answer_paypal">
+                    <label class="flex p-5 bg-white border  rounded-lg cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-blue-500 peer-checked:ring-2 peer-checked:border-transparent" for="answer_paypal">
                         <div class="flex items-center">
                             <img src="/images/payment-icons/paypal.svg" alt="VISA" class="w-6 h-5 mr-2"/>
                             <div class="text-sm ">Paypal</div>
@@ -111,6 +111,78 @@ eleventyNavigation:
     </div>
 </div>
 
+<!-- Color Input -->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Color Input Square</h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="flex justify-center space-x-2">
+            <label>
+              <input type="radio" name="color-blue" class="peer sr-only" />
+              <div class="group relative h-6 w-6 rounded border  bg-blue-600 ring-sky-300 ring-offset-1 peer-focus:ring-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="group-peer-checked:block absolute top-px left-px hidden h-5 w-5 text-lg text-white">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </label>
+            <label>
+              <input type="radio" name="color-blue" class="peer sr-only" />
+              <div class="group relative h-6 w-6 rounded border  bg-purple-600 ring-sky-300 ring-offset-1 peer-focus:ring-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="group-peer-checked:block absolute top-px left-px hidden h-5 w-5 text-lg text-white">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </label>
+            <label>
+              <input type="radio" name="color-blue" class="peer sr-only" />
+              <div class="group relative h-6 w-6 rounded border  bg-orange-600 ring-sky-300 ring-offset-1 peer-focus:ring-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="group-peer-checked:block absolute top-px left-px hidden h-5 w-5 text-lg text-white">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </label>
+            <label>
+              <input type="radio" name="color-blue" class="peer sr-only" />
+              <div class="group relative h-6 w-6 rounded border  bg-yellow-600 ring-sky-300 ring-offset-1 peer-focus:ring-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="group-peer-checked:block absolute top-px left-px hidden h-5 w-5 text-lg text-white">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </label>
+            <label>
+              <input type="radio" name="color-blue" class="peer sr-only" />
+              <div class="group relative h-6 w-6 rounded border  bg-red-600 ring-sky-300 ring-offset-1 peer-focus:ring-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="group-peer-checked:block absolute top-px left-px hidden h-5 w-5 text-lg text-white">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </label>
+            <label>
+              <input type="radio" name="color-blue" class="peer sr-only" />
+              <div class="group relative h-6 w-6 rounded border  bg-black ring-sky-300 ring-offset-1 peer-focus:ring-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="group-peer-checked:block absolute top-px left-px hidden h-5 w-5 text-lg text-white">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </label>
+            <label>
+              <input type="radio" name="color-blue" class="peer sr-only" />
+              <div class="group relative h-6 w-6 rounded border  bg-indigo-600 ring-sky-300 ring-offset-1 peer-focus:ring-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="group-peer-checked:block absolute top-px left-px hidden h-5 w-5 text-lg text-white">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </label>
+            <label>
+              <input type="radio" name="color-blue" class="peer sr-only" />
+              <div class="group relative h-6 w-6 rounded border border-gray-300 bg-white ring-sky-300 ring-offset-1 peer-focus:ring-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="group-peer-checked:block absolute top-px left-px hidden h-5 w-5 text-lg text-black">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </label>
+          </div>
+    </div>
+</div>
 
 
 
