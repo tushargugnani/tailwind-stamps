@@ -368,7 +368,20 @@
 <div class="my-10">
   <h4 class="my-2 text-lg text-gray-700 font-medium">Checkbox with Images</h4>
   <div class="tailwind-example border rounded-t p-3 flex justify-center">
-    <div class="grid grid-cols-3 gap-4">
+   <!--
+    This example requires some changes to your config:
+     ```
+     // tailwind.config.js
+     module.exports = {
+     // ...
+     plugins: [
+      // ...
+        require('@tushargugnani/tailwind-group-peer-checked'),
+      ],
+      }
+      ```
+    -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
       <label>
         <input type="checkbox" name="picture[]" value="1" class="peer sr-only" />
         <div class="group mb-3 flex h-24 w-36 rounded border bg-[url('https://picsum.photos/id/237/150/150')] bg-cover bg-center bg-no-repeat opacity-80 ring-offset-2 peer-checked:border-blue-500 peer-checked:bg-blue-50 peer-checked:opacity-100 peer-focus:ring-2">
