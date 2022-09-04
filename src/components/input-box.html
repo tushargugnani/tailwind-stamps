@@ -71,6 +71,33 @@ eleventyNavigation:
     </div>
 </div>
 
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Validation States</h4>
+    <div class="tailwind-example border rounded-t p-3 flex justify-center">
+        <div class="mx-auto w-full max-w-xs">
+            <div class="mb-3">
+              <label class="block text-sm text-gray-800">Valid State</label>
+              <div class="relative mt-1">
+                <input type="text" name="example-text-input" placeholder="Valid State" class="h-9 w-full rounded border border-green-600 p-2 text-sm ring-green-200 ring-offset-1 focus:outline-0 focus:ring-2" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-0 bottom-0 right-2 my-auto h-5 w-5 text-green-700">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="block text-sm text-gray-800">Invalid State</label>
+              <div class="relative mt-1">
+                <input type="text" name="example-text-input" placeholder="Valid State" class="h-9 w-full rounded border border-red-600 p-2 text-sm ring-red-200 ring-offset-1 focus:outline-0 focus:ring-2" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute top-0 bottom-0 right-2 my-auto h-5 w-5 text-red-700">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </div>
+              <span class="text-sm text-red-600">Invalid feedback</span>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="my-10">
     <h4 class="my-2 text-lg text-gray-700 font-medium">Floating Input Boxes</h4>
