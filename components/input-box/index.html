@@ -157,47 +157,47 @@
 <div class="my-10">
     <h4 class="my-2 text-lg text-gray-700 font-medium">Input Box</h4>
     <div class="tailwind-example border rounded-t p-3 flex justify-center">
-        <div>
+        <div class="mx-auto w-full max-w-xs">
             <!-- Text Input-->
             <div class="my-2">
                 <label class="text-sm block text-gray-800">Full Name</label>
                 <div class="mt-1">
-                    <input type="text" name="example-text-input" placeholder="Enter your fullname" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
+                    <input type="text" name="example-text-input" placeholder="Enter your fullname" class="border border-gray-300 focus:outline-blue-400 rounded w-full h-8 p-3 text-sm"/>
                 </div>
             </div>
             <!-- Password Input-->
             <div class="my-2">
                 <label class="text-sm block text-gray-800">Password</label>
                 <div class="mt-1">
-                    <input type="password" name="example-password-input" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
+                    <input type="password" name="example-password-input" class="border border-gray-300 focus:outline-blue-400 rounded w-full h-8 p-3 text-sm"/>
                 </div>
             </div>
             <!-- Disabled Input-->
             <div class="my-2">
                 <label class="text-sm block text-gray-800">Disabled</label>
                 <div class="mt-1">
-                    <input type="text" name="example-disabled-input" disabled placeholder="I am disabled" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
+                    <input type="text" name="example-disabled-input" disabled placeholder="I am disabled" class="border border-gray-300 focus:outline-blue-400 rounded w-full h-8 p-3 text-sm"/>
                 </div>
             </div>
             <!-- Readonly Input-->
             <div class="my-2">
                 <label class="text-sm block text-gray-800">Readonly</label>
                 <div class="mt-1">
-                    <input type="text" name="example-readonly-input" readonly value="Value is read only" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
+                    <input type="text" name="example-readonly-input" readonly value="Value is read only" class="border border-gray-300 focus:outline-blue-400 rounded w-full h-8 p-3 text-sm"/>
                 </div>
             </div>
             <!-- Required Input-->
             <div class="my-2">
                 <label class="text-sm block text-gray-800">Required <span class="text-red-600 text-base">*</span></label>
                 <div class="mt-1">
-                    <input type="text" name="example-required-input" placeholder="This field is required" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
+                    <input type="text" name="example-required-input" placeholder="This field is required" class="border border-gray-300 focus:outline-blue-400 rounded w-full h-8 p-3 text-sm"/>
                 </div>
             </div>
             <!-- Required Input-->
             <div class="my-2">
                 <label class="text-sm block text-gray-800">Help Text Input</label>
                 <div class="mt-1">
-                    <input type="text" name="example-required-input" placeholder="This field is required" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-8 p-3 text-sm"/>
+                    <input type="text" name="example-required-input" placeholder="This field is required" class="border border-gray-300 focus:outline-blue-400 rounded w-full h-8 p-3 text-sm"/>
                     <span class="text-gray-400 block text-sm mt-1">This is a muted help text</span>
                 </div>
             </div>
@@ -209,10 +209,10 @@
 <div class="my-10">
     <h4 class="my-2 text-lg text-gray-700 font-medium">Legend Style Input Box</h4>
     <div class="tailwind-example border rounded-t p-3 flex justify-center">
-        <div class="relative">
+        <div class="relative mx-auto w-full max-w-xs">
             <label class="absolute bg-white px-1 text-sm block text-gray-800 bottom-7 left-2">Full Name</label>
             <div class="mt-1">
-                <input type="text" placeholder="Enter your fullname" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-10 p-3 pt-5 text-sm"/>
+                <input type="text" placeholder="Enter your fullname" class="border border-gray-300 focus:outline-blue-400 rounded w-full h-10 p-3 pt-5 text-sm"/>
             </div>
         </div>
     </div>
@@ -249,17 +249,17 @@
 <div class="my-10">
     <h4 class="my-2 text-lg text-gray-700 font-medium">Floating Input Boxes</h4>
     <div class="tailwind-example border rounded-t p-3 flex justify-center">
-        <div>
+        <div class="mx-auto w-full max-w-xs">
         <div class="relative mb-3">
             <label class="absolute bg-white px-1 text-xs block text-gray-600 top-2 left-2">Email</label>
             <div class="mt-1">
-                <input type="text" value="name@example.com" class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-14 p-3 pt-8 text-sm"/>
+                <input type="text" value="name@example.com" class="border border-gray-300 focus:outline-blue-400 rounded w-full h-14 p-3 pt-8 text-sm"/>
             </div>
         </div>
         <div class="relative mb-3">
             <label class="absolute bg-white px-1 text-xs block text-gray-600 top-2 left-2">Password</label>
             <div class="mt-1">
-                <input type="password" value="xyz123"  class="border border-gray-300 focus:outline-blue-400 rounded w-64 h-14 p-3 pt-8 text-sm"/>
+                <input type="password" value="xyz123"  class="border border-gray-300 focus:outline-blue-400 rounded w-full h-14 p-3 pt-8 text-sm"/>
             </div>
         </div>
         </div>
@@ -272,7 +272,7 @@
     <div class="tailwind-example border rounded-t p-3 flex justify-center">
         <div x-data="{
             showPassword : false
-          }" class="w-64">
+          }" class="mx-auto w-full max-w-xs">
             <label for="password" class="block text-sm font-medium text-gray-600">Password</label>
             <div  class="mt-1 relative rounded-md shadow-sm">
               <input :type="showPassword ? 'text' : 'password'" name="password" id="password" class="border p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full pr-10 sm:text-sm border-gray-300 rounded-md" placeholder="Enter password">
