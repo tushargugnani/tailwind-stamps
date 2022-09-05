@@ -1,4 +1,8 @@
 # Tailwind Stamps
+
+![Screenshot 2022-09-02 at 12 00 36 PM](https://user-images.githubusercontent.com/5244323/188420196-c39005f7-080b-4604-9f4f-62dde173394e.png)
+
+
 Tailwind Stamps is a open source collection of reusable TailwindCSS HTML Components. 
 
 [Tailwind Stamps](https://tailwindcss.5balloons.info) 
