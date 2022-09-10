@@ -9,10 +9,31 @@ title: Tailwind Components
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
+    <link href="{{ '/css/prism-5balloons.css' | url }}" rel="stylesheet" />
     <link href="{{ '/css/style.css' | url }}" rel="stylesheet">
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="{{ '/js/prism-5balloons.js' | url }}"></script>
+
     <style>
         [x-cloak] { display: none !important; }
+        pre[class*=language-]{
+            border-radius: 10px;
+            margin: 15px 0px;
+            background-color: #383838;
+        }
+        .copy-to-clipboard-button{
+            position: absolute;
+            top: 0.65rem;
+            right: 0.65rem;
+            z-index: 10;
+            display: block;
+            padding: 0.25rem 0.5rem !important;
+            font-size: .65em !important;
+            color: #0d6efd !important;
+            background-color: #fff !important;
+            border: 1px solid !important;
+            border-radius: 0.25rem !important;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
