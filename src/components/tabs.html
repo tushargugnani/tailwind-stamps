@@ -1,0 +1,54 @@
+---
+layout: base.njk
+title: Tabs - TailwindCSS and AlpineJS - Tailwind Stamps
+eleventyNavigation:
+  key: Tabs
+  parent: Base
+---
+<h2 class="text-3xl font-semibold text-gray-800 my-3">Tabs</h2>
+<!-- Tabs-->
+<div class="my-10">
+    <h4 class="my-2 text-lg text-gray-700 font-medium">Tabs <span class="ml-2 p-1 rounded text-xs bg-gray-400 text-white">Uses AlpineJS</span></h4>
+    <div class="tailwind-example border rounded-t p-2 text-sm">
+        <div x-data="{
+            activeTab : 'tab1',
+            isActive(tab){
+                if(this.activeTab == tab){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            }">
+            <!-- Tab Navigation-->
+            <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+                <ul class="flex flex-wrap -mb-px">
+                    <li class="mr-2 cursor-pointer" @click="activeTab = 'tab1'">
+                        <a class="inline-block p-4 rounded-t-lg border-b-2 border-transparent " :class="isActive('tab1') ? 'text-blue-600 border-blue-600 active ' : 'hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'">Profile</a>
+                    </li>
+                    <li class="mr-2 cursor-pointer" @click="activeTab = 'tab2'">
+                        <a class="inline-block p-4 rounded-t-lg border-b-2 border-transparent " :class="isActive('tab2') ? 'text-blue-600 border-blue-600 active ' : 'hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'">Dashboard</a>
+                    </li>
+                    <li class="mr-2 cursor-pointer" @click="activeTab = 'tab3'">
+                        <a class="inline-block p-4 rounded-t-lg border-b-2 border-transparent " :class="isActive('tab3') ? 'text-blue-600 border-blue-600 active ' : 'hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'">Settings</a>
+                    </li>
+                    <li class="mr-2 cursor-pointer" @click="activeTab = 'tab4'">
+                        <a class="inline-block p-4 rounded-t-lg border-b-2 border-transparent " :class="isActive('tab4') ? 'text-blue-600 border-blue-600 active ' : 'hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'">Contacts</a>
+                    </li>
+                    <li class="mr-2 cursor-pointer" @click="activeTab = 'tab5'">
+                        <a class="inline-block p-4 rounded-t-lg border-b-2 border-transparent " :class="isActive('tab5') ? 'text-blue-600 border-blue-600 active ' : 'hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Tab Content-->
+            <div class="p-5">
+                <div x-show="isActive('tab1')"><span class="font-semibold">Tab Content # 1</span> : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla commodi quis, dignissimos recusandae incidunt eligendi esse quas architecto minus amet consequatur! Iste dicta repudiandae nobis soluta. Error, quod neque.</div>
+                <div x-show="isActive('tab2')"><span class="font-semibold">Tab Content # 2</span> : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla commodi quis, dignissimos recusandae incidunt eligendi esse quas architecto minus amet consequatur! Iste dicta repudiandae nobis soluta. Error, quod neque.</div>
+                <div x-show="isActive('tab3')"><span class="font-semibold">Tab Content # 3</span> : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla commodi quis, dignissimos recusandae incidunt eligendi esse quas architecto minus amet consequatur! Iste dicta repudiandae nobis soluta. Error, quod neque.</div>
+                <div x-show="isActive('tab4')"><span class="font-semibold">Tab Content # 4</span> : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla commodi quis, dignissimos recusandae incidunt eligendi esse quas architecto minus amet consequatur! Iste dicta repudiandae nobis soluta. Error, quod neque.</div>
+                <div x-show="isActive('tab5')"><span class="font-semibold">Tab Content # 5</span> : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla commodi quis, dignissimos recusandae incidunt eligendi esse quas architecto minus amet consequatur! Iste dicta repudiandae nobis soluta. Error, quod neque.</div>
+            </div>
+        </div>
+        
+    </div>
+</div>
